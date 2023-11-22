@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Sunset Dashboard</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-sun"></i> Sunrise and Sunset Times</h1>
+    </header>
+    <section class="info-container">
+      <div class="info-box" id="today-info">
+        <h2>Today</h2>
+        <p><strong><span id="current-date"></span></strong></p>
+       <div class="forecast-details" id="today-forecast-details">
+          <p>Sunrise: <strong><span id="sunrise"></span></strong></p>
+          <p>Sunset: <strong><span id="sunset"></span></strong></p>
+          <p>Dawn: <strong><span id="Dawn"></span></strong></p>
+          <p>Dusk: <strong><span id="Dusk"></span></strong></p>
+          <p>Day Length : <strong><span id="day-length-today"></span></strong></p>
+          <p>Solar Noon : <strong><span id="solar-noon-today"></span></strong></p>
+          <p>Time Zone: <strong><span id="time-zone"></span></strong></p>
+        </div>
+      </div>
+      <div class="info-box" id="tomorrow-info">
+        <h2>Tomorrow</h2>
+        <p><strong><span id="tomorrow-date"></span></strong></p>
+
+        <div class="forecast-details" id="tomorrow-forecast-details">
+          <p>Sunrise: <strong><span id="sunrise-tomorrow"></span></strong></p>
+          <p>Sunset: <strong><span id="sunset-tomorrow"></span></strong></p>
+          <p>Dawn: <strong><span id="Dawn-tomorrow"></span></strong></p>
+          <p>Dusk: <strong><span id="Dusk-tomorrow"></span></strong></p>
+          <p>Day Length : <strong><span id="day-length-tomorrow"></span></strong></p>
+          <p>Solar Noon : <strong><span id="solar-noon-tomorrow"></span></strong></p>
+          <p>Time Zone: <strong><span id="time-zone-tomorrow"></span></strong></p>
+        </div>
+      </div>
+    </section>
+    <section>
+        <button id="geolocation-btn" onclick="getCurrentLocation()"><i class="fas fa-location-arrow"></i> Use Current Location</button>
+        <button id="search-btn"> Look up sunrise & Sunset</button>
+        <button id="search-enter"><i class="fas fa-search"></i></button>
+    </section>
+    
+    
+    <code id="raw-output"></code>
+  </div>
+  <script src="script/index.js"></script>
+</body>
+</html>
