@@ -78,3 +78,8 @@ body {
   p strong {
     color: #d6600b; /* Orange color */
 }
+
+#location-input {
+  width: 200px; 
+  padding: 10px; 
+}
