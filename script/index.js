@@ -73,6 +73,7 @@ function getCurrentLocation() {
 
             },
             function () {
+                clearUI();
                 displayError('Error fetching current location.');
             }
         );
@@ -89,11 +90,12 @@ function displayError(message) {
 
 // Additional function for searching location
 function searchLocation() {
-    const locationInput = document.getElementById('location-input').value;
+    var locationInput = document.getElementById('location-input').value;
 
     // Check if the input is empty or contains only spaces
     if (!locationInput.trim()) {
         displayError('Please enter a valid location');
+        clearUI(); 
         return;
     }
 
@@ -113,6 +115,8 @@ function searchLocation() {
                 const longitude = data[0].lon;
                 fetchSunriseSunsetData(latitude, longitude);
             } else {
+                clearUI();
+                document.getElementById('location-input').value = '';
                 throw new Error('Location not found');
             }
         })
@@ -186,4 +190,21 @@ function fetchSunriseSunsetData(latitude, longitude) {
             }
         })
         .catch(error => console.error('Error:', error));
+}
+
+function clearUI(){
+    document.querySelector('#sunrise').innerHTML = null;
+    document.querySelector('#sunset').innerHTML = null;
+    document.querySelector('#Dawn').innerHTML =null;
+    document.querySelector('#Dusk').innerHTML = null;
+    document.querySelector('#day-length-today').innerHTML = null;
+    document.querySelector('#solar-noon-today').innerHTML = null;
+    document.querySelector('#time-zone').innerHTML = null;
+    document.querySelector('#sunrise-tomorrow').innerHTML = null;
+    document.querySelector('#sunset-tomorrow').innerHTML = null;
+    document.querySelector('#Dawn-tomorrow').innerHTML = null;
+    document.querySelector('#Dusk-tomorrow').innerHTML = null;
+    document.querySelector('#day-length-tomorrow').innerHTML = null;
+    document.querySelector('#solar-noon-tomorrow').innerHTML = null;
+    document.querySelector('#time-zone-tomorrow').innerHTML = null;
 }
