@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('../images/image.jpeg');
+    background-image: url('../images/imagesun.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -15,7 +15,7 @@ body {
 }
   
   a {
-    color: #3498db;
+    color: #100703;
   }
   
   .container {
@@ -55,7 +55,7 @@ body {
   }
   
   .info-box {
-    background: #a2dee6;
+    background: #c8cb0a;
     padding: 15px;
     border-radius: 10px;
     width: 45%;
@@ -72,7 +72,7 @@ body {
   }
 
   p strong {
-    color: #d6600b; /* Orange color */
+    color: #d6600b; 
 }
 
 #location-input {
@@ -82,4 +82,14 @@ body {
 
 footer p {
   color: white;
+}
+
+#tomorrow-date, #current-date{ 
+color: #df0f85;
+}
+
+h1{
+  font-family:cursive;
+  font-weight:bolder;
+  font-size:xx-large;
 }

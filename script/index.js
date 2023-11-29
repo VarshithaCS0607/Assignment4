@@ -1,5 +1,6 @@
 // script/index.js
 function getCurrentLocation() {
+    clearUI();
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             function (position) {
