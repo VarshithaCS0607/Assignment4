@@ -118,4 +118,8 @@ h1{
     position: relative; 
     z-index: 1; 
   }
+  button, input {
+    width: 100%;
+    box-sizing: border-box;
+}
 }
