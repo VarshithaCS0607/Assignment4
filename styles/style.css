@@ -89,7 +89,14 @@ color: #df0f85;
 }
 
 h1{
-  font-family:cursive;
-  font-weight:bolder;
-  font-size:xx-large;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.forecast-details i {
+  margin-right: 5px; 
+}
+.forecast-icon {
+  font-size: 2em;
+  color: #3498db; 
 }
