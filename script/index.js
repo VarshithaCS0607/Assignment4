@@ -1,4 +1,4 @@
-// script/index.js
+
 function getCurrentLocation() {
     clearUI();
     if (navigator.geolocation) {
@@ -125,7 +125,7 @@ function searchLocation() {
 }
 
 
-// Existing function for fetching sunrise and sunset data
+
 function fetchSunriseSunsetData(latitude, longitude) {
     const todayUrl = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}&date=today`;
 
