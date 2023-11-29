@@ -56,7 +56,7 @@ body {
   
   .info-box {
     /*background: #c8cb0a; */
-    background: #d8d8d4;
+    background: #c8cb0a;;
     padding: 15px;
     border-radius: 10px;
     width: 45%;
@@ -106,7 +106,7 @@ h1{
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
   .info-container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .info-box {
