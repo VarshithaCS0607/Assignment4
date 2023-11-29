@@ -101,28 +101,17 @@ h1{
   color: #3498db; 
 }
 
-/* New styles for smaller screens */
-@media only screen and (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
 
-  .info-container {
-    flex-direction: column;
-  }
+   /* Adjusting grid layout for smaller screens */
 
-  .info-box {
-    width: 100%;
-    margin-bottom: 15px;
-  }
+   /* Adjust grid layout for smaller screens */
+   @media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
 
-  #location-input {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  button {
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .info-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
